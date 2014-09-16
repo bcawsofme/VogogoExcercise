@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Vogogo Groceries Store</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrap">
+            <table class="cartItems">
+                <tr>
+                    <td><input type="image" src="images/apple.png" name="Apple" onclick="AddtoCart(name);" /></td>
+                    <td><input type="image" src="images/orange.png" name="Orange" onclick="AddtoCart(name);" /></td>
+                    <td><input type="image" src="images/grapes.png" name="Grapes" onclick="AddtoCart(name);" /></td>
+                    <td><input type="image" src="images/lettuce.png" name="Lettuce" onclick="AddtoCart(name);" /></td>
+                </tr>
+                <tr>
+                    <td><p>Apple - $0.50</p></td>
+                    <td><p>Orange - $0.55</p></td>
+                    <td><p>Grapes - $1.30</p></td>
+                    <td><p>Lettuce - $1.00</p></td>
+                </tr>
+                <tr>
+                    <td><input type="image" src="images/potato.png" name="Potato" onclick="AddtoCart(name);" /></td>
+                    <td><input type="image" src="images/carrot.png" name="Carrot" onclick="AddtoCart(name);" /></td>
+                    <td><input type="image" src="images/eggplant.png" name="Eggplant" onclick="AddtoCart(name);" /></td>
+                    <td><input type="image" src="images/plum.png" name="Plum" onclick="AddtoCart(name);" /></td>
+                </tr>
+                <tr>
+                    <td><p>Potato - $0.75</p></td>
+                    <td><p>Carrot - $0.40</p></td>
+                    <td><p>Eggplant - $0.80</p></td>
+                    <td><p>Plum - $0.45</p></td>
+                </tr>
+            </table>
+        <div id="cart"></div>
+        <div id="submit"><input type="button" class="button" value="Check Out" onclick="CheckOut();" /><input type="button" class="button" value="Clear Cart" onclick="ClearCart();" /></div>
+        <div id="receipt_border">
+            <h2>Vogogo Groceries Store #22</h2>
+            <div id="receipt">
+                <table id="receiptTable" style="width:450px; text-align: left;">
+                    <tr><td><b>Item</b></td><td><b>Price</b></td><td><b>Amount</b></td></tr>
+                </table>
+            </div>
+            <div id="total"></div>
+            <div id="receipt_button"><input class="button" type="button" value="Clear Receipt" onclick="ClearReceipt();" /></div>
+        </div>        
+    </div>
+</body>
+</html>
